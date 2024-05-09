@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Browse Available Pets</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/D_Project.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <%- include ('partial/header') %>
+        </header>
+        
+        <div id="browseContent">
+            <h1><u>Browse Available Pets</u></h1>
+            <ul id="browseList1">
+                
+                <li class="blist"><u>Pet #1</u><br>Name: Cutie<br>Age: 2 years old<br>Gender: Female<br>Breed: Scottish Fold<br>Gets along with other pets<br>Gets along with family members <br><input type="radio">Interested <img  class="pets" src="images/cat1.jpeg" alt="cat pic"> </li>
+                
+               <li><br><br></li>
+                
+                <li class="blist"><u>Pet #2</u><br>Name: Jake<br>Age: 1 year old<br>Gender: Male<br>Breed: Maltese Dog<br>Gets along with other pets<br>Gets along with family members <br><input type="radio">Interested<img class="pets" src="images/dog1.jpeg" alt="dog pic"></li>
+                
+                 <li><br><br></li>
+                
+                <li class="blist"><u>Pet #3</u><br>Name: Elli<br>Age: 1 year old<br>Gender: Female<br>Breed: Pomeranian<br>Gets along with other pets<br>Gets along with family members <br><input type="radio">Interested<img  class="pets" src="images/dog2.jpeg" alt="dog pic"></li>
+                
+                 <li><br><br></li>
+                
+                <li class="blist"><u>Pet #4</u><br>Name: Soonie<br>Age: 1 year old<br>Gender: Female<br>Breed: Scottish Fold<br>Gets along with other pets<br>Gets along with family members <br><input type="radio">Interested<img  class="pets" src="images/cat2.jpeg" alt="cat pic"></li>
+            </ul>
+        </div>
+        
+        <nav class="navBar">
+            <ul>
+                <li> <div id="dateAndTime"></div></li>
+                <li><a href="/home">Home Page</a> </li>
+                <li> <a class="active"> Browse Available Pets</a> </li>
+                <li> <a href="/find">Find a Dog/Cat</a> </li>
+                <li> <a href="/dogcare">Dog Care</a> </li>
+                <li> <a href="/catcare">Cat Care</a> </li>
+                <li> <a href="/giveaway">Have a Pet to Give Away?</a> </li>
+                <li><a href="/login">LogIn/SignIn</a></li>
+                <li><a href="/logout">LogOut</a></li>
+                <li> <a href="/contact">Contact Us</a> </li>
+            </ul>
+        </nav>
+    
+    
+    <div id="footer">
+        <%- include('partial/footer')  %> 
+    </div>
+         <script src="/project.js"></script>
+    </body>
+
+</html>

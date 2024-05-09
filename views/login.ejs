@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Browse Available Pets</title>
+            <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/D_Project.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        </head>
+<body>
+    <header>
+        <%- include ('partial/header') %>
+    </header>
+    <div id="LoginContent">
+        <h1> LogIn / SignIn</h1>
+        <p>Please fill the following form to LogIn or SignIn. If you enter an existing username, you will sign in, otherwise, a new account will be created</p>
+        <div id="Fbox1">
+            <form action="/login" method="post">
+                <p>Username: </p>
+                <input type="text" name="username" placeholder="Enter your username">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Enter Your password">
+                <br><br>
+                <input type="submit">
+            </form>
+        </div>
+
+    </div>
+    <nav class="navBar">
+            <ul>
+                <li> <div id="dateAndTime"></div></li>
+                <li><a href="/home">Home Page</a> </li>
+                <li> <a href="/browse"> Browse Available Pets</a> </li>
+                <li> <a href="/find">Find a Dog/Cat</a> </li>
+                <li> <a href="/dogcare">Dog Care</a> </li>
+                <li> <a href="/catcare">Cat Care</a> </li>
+                <li> <a href="/giveaway">Have a Pet to Give Away?</a> </li>
+                <li><a class="active">LogIn/SignIn</a></li>
+                <li><a href="/logout">LogOut</a></li>
+                <li> <a href="/contact">Contact Us</a> </li>
+            </ul>
+     </nav>
+
+     <div id="footer">
+        <%- include('partial/footer')  %> 
+    </div>
+         <script src="/project.js"></script>
+
+</body>
+</html>

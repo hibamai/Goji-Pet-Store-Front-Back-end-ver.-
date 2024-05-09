@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title> Goji Adoption Center</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/D_Project.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <%- include ('partial/header')%>
+        </header>
+        
+        <div id="giveAwayContent">
+            <h1><u>Do you Have a Pet to Give Away?</u></h1>
+            <p id="para"></p>
+            <h3>Well you are at the right place! Please fill out the following form and your pet will be ready to be given away.</h3>
+            
+            <form action="/giveaway" method="post">
+                <div id="Gbox1">
+                Is you pet a dog or a cat?<br>
+                <select required id="cORd" name="cORd">
+                    <option disabled selected value="">Choose an option</option>
+                    <option>Cat</option>
+                    <option>Dog</option>
+                </select>
+                    <br><br>
+                    
+                What is the breed of your pet?
+                (If it a mixed breed, please select the "mixed breed" button and enter the breeds in the box.)<br>
+                    <input required id="breed" name="breed" type="text" placeholder="Enter the breed(s)">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="mixed"> It is a mixed breed pet
+                    <br><br>
+                    
+                What is the age of your pet?<br>
+                    <select required id="age" name="age">
+                        <option  disabled selected value="">Choose an age category</option>
+                        <option>Between 0 &amp; 2 years old</option>
+                        <option>Between 3 &amp; 5 years old</option>
+                        <option>Between 6 &amp; 10 years old</option>
+                        <option>Between 11 &amp; 15 years old</option>
+                        <option>Between 16 &amp; 20 years old</option>
+                        <option>Over 20 years old</option>
+                    </select>
+                    <br><br>
+                    
+                What is the gender of your pet?<br>
+                    <select required id="gender" name="gender">
+                        <option  disabled selected value="">Choose a gender</option>
+                        <option>Female</option>
+                        <option>Male</option>
+                    </select>
+                    
+                </div>
+                <br>
+                <div id="Gbox2">
+                    Does your  pet get along well with other pets?<br>
+                        <select required id="otherPets" name="otherPets">
+                            <option disabled selected value="">Choose an option</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                        <br><br>
+                    Is your pet suitable for families with small children?<br>
+                    <select required id="otherKids" name="otherKids">
+                        <option disabled selected value="">Choose an option</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select>
+                        <br><br>
+                    If you have any additional comments, you can enter them here.<br><br>
+                   <input type="text" name="comments" style="width: 200px;height: 70px" placeholder="Enter additional comments">
+                    <br>
+                </div>
+                <br>
+                <div id="Gbox3">
+                    Please enter your last and first names:<br>
+                        <input required name="lastName" id="lastName" type="text" placeholder="Last Name">
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input required name="firstName" id="firstName" type="text" placeholder="First Name">
+                    <br><br>
+                    Please enter your E-mail:<br>
+                        <input required name="email" id="email" type="email" placeholder="Enter your E-mail">
+                </div>
+        
+                <br>
+                <input type="submit">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset">
+                
+            </form>
+            <br><br><br><br><br>
+        </div>
+            
+        <nav class="navBar">
+            <ul>
+                <li> <div id="dateAndTime"></div></li>
+                <li><a href="/home">Home Page</a> </li>
+                <li> <a href="/browse"> Browse Available Pets</a> </li>
+                <li> <a href="/find">Find a Dog/Cat</a> </li>
+                <li> <a href="/dogcare">Dog Care</a> </li>
+                <li> <a href="/catcare">Cat Care</a> </li>
+                <li> <a class="active">Have a Pet to Give Away?</a> </li>
+                <li><a href="/login">LogIn/SignIn</a></li>
+                <li><a href="/logout">LogOut</a></li>
+                <li> <a href="/contact">Contact Us</a> </li>
+            </ul>
+        </nav>
+        
+        <div id="footer">
+        <%- include ('partial/footer') %>
+        </div>
+        
+        <script src="/project.js"></script>
+        
+    </body>
+    
+</html>

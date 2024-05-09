@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title> Goji Adoption Center</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/D_Project.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <%- include('partial/header') %>
+        </header>
+        
+        <div id="ContactUsContent">
+        <h1><u> Our Contacts</u></h1>
+            For any questions/concerns, you can always contact us using the following infos:<br><br>
+            <div id="Contact">
+                <ul>
+                    <li>Name: Hiba Maifi</li>
+                    <li>Student ID: 40289223</li>
+                    <li>E-mail: h_maifi@live.concordia.ca</li>
+                    <li>Phone Number: (514)-123-8765</li>
+                </ul>
+            </div>
+        </div>
+        
+        <nav class="navBar">
+            <ul>
+                <li> <div id="dateAndTime"></div></li>
+                <li><a href="/home">Home Page</a> </li>
+                <li> <a href="/browse"> Browse Available Pets</a> </li>
+                <li> <a href="/find">Find a Dog/Cat</a> </li>
+                <li> <a href="/dogcare">Dog Care</a> </li>
+                <li> <a href="/catcare">Cat Care</a> </li>
+                <li> <a href="/giveaway" >Have a Pet to Give Away?</a> </li>
+                <li><a href="/login">LogIn/SignIn</a></li>
+                <li><a href="/logout">LogOut</a></li>
+                <li> <a class="active">Contact Us</a> </li>
+            </ul>
+        </nav>
+    
+    
+    <div id="footer">
+        <%- include ('partial/footer') %>
+    </div>
+         <script src="/project.js"></script>
+        </body>
+    
+</html>

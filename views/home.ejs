@@ -1,0 +1,52 @@
+!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title> Goji Adoption Center</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/D_Project.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+       
+    </head>
+        
+    <body>
+        
+        <header>
+            <%- include ('partial/header') %>
+        </header>
+        
+        <div id="homeContent">
+        <h1> <u>Welcome to our Adoption Center!</u></h1>
+        <h2> Our Mission: </h2>
+        <p>Our mission is to provide protection and care to pets while looking for a safe home for them. We value pets and believe that good treatement is a right for every pet whether they belong somewhere or not.</p>
+        <h2> Our Services:</h2>
+        <p> If you are looking for a pet to adopt, you are at the right spot: we offer many pets to adopt depending on your choices and preferences. Please take a look at our "Find a Dog/Cat" or "Browse Available Pets" sections for further details. If on the other hand, you are looking for a foster for your pet, you can always consult our "Have a Pet to Give Away" section for further details. Finally, if you already own a pet and want to take further care of your little companion, you can always consult our "Dog Care" or "Cat Care" section for many ways to treat your pet right, they way they deserve. </p>
+            <br><br><br>
+        
+    </div>
+        
+        <nav class="navBar">
+            <ul>
+                <li> <div id="dateAndTime"></div></li>
+                <li><a class="active">Home Page</a> </li>
+                <li> <a href="/browse"> Browse Available Pets</a> </li>
+                <li> <a href="/find">Find a Dog/Cat</a> </li>
+                <li> <a href="/dogcare">Dog Care</a> </li>
+                <li> <a href="/catcare">Cat Care</a> </li>
+                <li> <a href="/giveaway" >Have a Pet to Give Away?</a> </li>
+                <li><a href="/login">LogIn/SignIn</a></li>
+                <li><a href="/logout">LogOut</a></li>
+                <li> <a href="/contact">Contact Us</a> </li>
+            </ul>
+        </nav>
+
+    
+    <div id="footer">
+        <%- include ('partial/footer') %>
+    </div>
+       <script  src="/project.js"></script>
+        </body>
+        
+</html>

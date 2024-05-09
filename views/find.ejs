@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title> Goji Adoption Center</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/css/D_Project.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+       
+    </head>
+        
+    <body>
+        <header>
+            <%- include('partial/header') %>
+
+        </header>
+        
+        <div id="findContent">
+            <h1> <u>Find a Dog/Cat</u></h1>
+            <h3> Please fill out the following form to find a pet that suits your preferences</h3>
+            <form>
+                <div id="Fbox1">
+                Are you looking for a cat or a dog? <br>
+                    <input required type="radio" name="findPet">Cat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input required type="radio" name="findPet">Dog <br><br>
+                    
+                Which breed of cat/dog are you looking for?<br>
+                    <input required name="breed" type="text" placeholder="Enter the breed">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input name="breed" type="radio">It does not matter (enter 'none') <br><br>    
+                </div>
+                <br>
+                <div id="Fbox2">
+                    Which age do you want your pet to have? <br>
+                    <select required name="age">
+                        <option disabled selected value="">Choose an age category</option>
+                        <option>Between 0 &amp; 2 years old</option>
+                        <option>Between 3 &amp; 5 years old</option>
+                        <option>Between 6 &amp; 10 years old</option>
+                        <option>Between 11 &amp; 15 years old</option>
+                        <option>Between 16 &amp; 20 years old</option>
+                        <option>Over 20 years old</option>
+                        <option>It does not matter</option>
+                    </select>
+                   
+                    <br><br>
+                    Which gender are you looking for? <br>
+                    <select required name="gender">
+                        <option disabled selected value="">Choose a gender</option>
+                        <option>Female</option>
+                        <option>Male</option>
+                        <option>It does not matter</option>
+                    </select>
+                    <br><br>
+                    Do want you pet to get along well with other pets and/or children? <br>
+                    <select required>
+                        <option disabled selected value="">Choose an option</option>
+                        <option>Other pets</option>
+                        <option>Small children</option>
+                        <option>Both</option>
+                        <option>It does not matter</option>
+                    </select>
+                    
+                </div> <br>
+                <div id="Fbox3">
+                    <input type="submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset">
+                    <br><br><br><br><br>
+                </div>
+            </form>
+        </div>
+        
+        <nav class="navBar">
+            <ul>
+                <li> <div id="dateAndTime"></div></li>
+                <li><a href="/home">Home Page</a> </li>
+                <li> <a href="/browse"> Browse Available Pets</a> </li>
+                <li> <a class="active">Find a Dog/Cat</a> </li>
+                <li> <a href="/dogcare">Dog Care</a> </li>
+                <li> <a href="/catcare">Cat Care</a> </li>
+                <li> <a href="/giveaway">Have a Pet to Give Away?</a> </li>
+                <li><a href="/login">LogIn/SignIn</a></li>
+                <li><a href="/logout">LogOut</a></li>
+                <li> <a href="/contact">Contact Us</a> </li>
+            </ul>
+        </nav>
+    
+    
+    <div id="footer">
+        <%- include('partial/footer') %>
+    </div>
+         <script src="/project.js"></script>
+    </body>
+
+
+</html>
